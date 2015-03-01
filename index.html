@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>whitespace translater</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1>whitespace translater</h1>
+        <textarea id="input" placeholder="input" onkeyup="resizeTextareaByEvent(event)"></textarea>
+        <hr>
+        <select id="intype">
+            <option value="ws">whitespace</option>
+            <option value="st">st-replace</option>
+            <option value="as">assembly</option>
+        </select>
+        -&gt;
+        <select id="outtype">
+            <option value="ws">whitespace</option>
+            <option value="st">st-replace</option>
+            <option value="as">assembly</option>
+        </select>
+        &nbsp;:&nbsp;
+        <button id="convert">convert</button>
+        <hr>
+        <textarea id="output" placeholder="output" readonly></textarea>
+        <hr>
+        <ul>
+            <li>Whitespace code is too sensitive, especially around the end of file. When something is wrong, please fix by hand.</li>
+            <li>Execution is not supported.</li>
+            <li>The source code is under MIT License</li>
+        </ul>
+    </body>
+</html>
